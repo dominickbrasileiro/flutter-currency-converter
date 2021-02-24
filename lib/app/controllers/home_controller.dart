@@ -19,7 +19,7 @@ class HomeController {
   void convert() {
     String text = from.text;
 
-    double value = double.tryParse(text) ?? 1;
+    double value = double.tryParse(text.replaceAll(',', '.')) ?? 1;
 
     double returnValue = 0;
 
