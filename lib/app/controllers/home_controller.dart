@@ -21,8 +21,6 @@ class HomeController {
 
     double value = double.tryParse(text.replaceAll(',', '.')) ?? 1;
 
-    double returnValue = 0;
-
     Map toCurrencyValue = {
       'Brazilian Real': fromCurrency.brazilianReal,
       'United States Dollar': fromCurrency.unitedStatesDollar,
@@ -30,7 +28,7 @@ class HomeController {
       'Bitcoin': fromCurrency.bitcoin,
     };
 
-    returnValue = value * toCurrencyValue[toCurrency.name];
+    double returnValue = value * toCurrencyValue[toCurrency.name];
 
     result.text = returnValue.toStringAsFixed(2);
   }
