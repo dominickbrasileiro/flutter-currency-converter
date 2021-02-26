@@ -62,7 +62,7 @@ class _HomeViewState extends State<HomeView> {
                 ),
                 SizedBox(height: 50),
                 RaisedButton(
-                  color: Colors.amber,
+                  color: Colors.green,
                   child: Text('Convert'),
                   onPressed: () {
                     homeController.convert();

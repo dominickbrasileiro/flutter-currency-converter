@@ -26,11 +26,11 @@ class CurrencyBox extends StatelessWidget {
             height: 56,
             child: DropdownButton<CurrencyModel>(
               value: selectedCurrency,
-              iconEnabledColor: Colors.amber,
+              iconEnabledColor: Colors.green,
               isExpanded: true,
               underline: Container(
                 height: 1,
-                color: Colors.amber,
+                color: Colors.green,
               ),
               items: currencies
                   .map(
@@ -51,10 +51,10 @@ class CurrencyBox extends StatelessWidget {
             controller: controller,
             decoration: InputDecoration(
               enabledBorder: UnderlineInputBorder(
-                borderSide: BorderSide(color: Colors.amber),
+                borderSide: BorderSide(color: Colors.green),
               ),
               focusedBorder: UnderlineInputBorder(
-                borderSide: BorderSide(color: Colors.amber),
+                borderSide: BorderSide(color: Colors.green),
               ),
             ),
           ),
